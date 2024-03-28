@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!-- created By instagram -> vishalbala_here -->
+
+<ScrollPane fitToHeight="true" fitToWidth="true"
+	maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+	minWidth="-Infinity" prefHeight="736.0" prefWidth="1280.0"
+	xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="org.CafeManageMent.CafeManageSys.ManagerLayout">
+	<content>
+		<AnchorPane fx:id="mainPane"
+			maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+			<children>
+				<AnchorPane layoutX="333.0" layoutY="-5.0"
+					style="-fx-background-color: #bdfff5;"
+					AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="333.0"
+					AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+					<children>
+						<HBox alignment="CENTER" fillHeight="false" minHeight="220.0"
+							prefHeight="240.0" prefWidth="880.0" spacing="20.0"
+							style="-fx-background-color: #d6ffb5;"
+							AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+							AnchorPane.topAnchor="0.0">
+							<children>
+								<AnchorPane minHeight="200.0" minWidth="200.0"
+									prefHeight="0.0" prefWidth="200.0"
+									style="-fx-background-color: #c475ff; -fx-background-radius: 15px;">
+									<children>
+										<ImageView fx:id="numberOfCustomer"
+											fitHeight="100.0" fitWidth="150.0" layoutX="25.0"
+											layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+										<Label alignment="CENTER" layoutX="5.0" layoutY="165.0"
+											minHeight="25.0" minWidth="190.0"
+											style="-fx-background-color: #4c008f; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px; -fx-border-width: 2px;"
+											text="Number of Employes" textFill="WHITE">
+											<font>
+												<Font name="System Bold" size="15.0" />
+											</font>
+										</Label>
+										<Label fx:id="ne" alignment="CENTER" layoutX="25.0"
+											layoutY="14.0" minWidth="150.0"
+											style="-fx-background-color: #4c008f; -fx-border-color: white; -fx-border-image-width: 2px; -fx-border-radius: 12px; -fx-background-radius: 12px; -fx-border-width: 2px;"
+											text="0" textFill="WHITE">
+											<font>
+												<Font size="16.0" />
+											</font>
+										</Label>
+									</children>
+								</AnchorPane>
+								<AnchorPane minHeight="200.0" minWidth="200.0"
+									prefHeight="200.0" prefWidth="200.0"
+									style="-fx-background-color: #c475ff; -fx-background-radius: 15px;">
+									<children>
+										<ImageView fx:id="tdsIncome" fitHeight="100.0"
+											fitWidth="150.0" layoutX="25.0" layoutY="50.0"
+											pickOnBounds="true" preserveRatio="true" />
+										<Label alignment="CENTER" layoutX="5.0" layoutY="165.0"
+											minHeight="25.0" minWidth="190.0"
+											style="-fx-background-color: #4c008f; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px; -fx-border-width: 2px;"
+											text="Number of Products" textFill="WHITE">
+											<font>
+												<Font name="System Bold" size="15.0" />
+											</font>
+										</Label>
+										<Label fx:id="np" alignment="CENTER" layoutX="25.0"
+											layoutY="14.0" minWidth="150.0"
+											style="-fx-background-color: #4c008f; -fx-border-color: white; -fx-border-image-width: 2px; -fx-border-radius: 12px; -fx-background-radius: 12px; -fx-border-width: 2px;"
+											text="0" textFill="WHITE">
+											<font>
+												<Font size="16.0" />
+											</font>
+										</Label>
+									</children>
+								</AnchorPane>
+								<AnchorPane minHeight="200.0" minWidth="200.0"
+									prefHeight="200.0" prefWidth="200.0"
+									style="-fx-background-color: #c475ff; -fx-background-radius: 15px;">
+									<children>
+										<ImageView fx:id="ttlIncome" fitHeight="100.0"
+											fitWidth="150.0" layoutX="26.0" layoutY="50.0"
+											pickOnBounds="true" preserveRatio="true" />
+										<Label alignment="CENTER" layoutX="6.0" layoutY="165.0"
+											minHeight="25.0" minWidth="190.0"
+											style="-fx-background-color: #4c008f; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px; -fx-border-width: 2px;"
+											text="Total Income" textFill="WHITE">
+											<font>
+												<Font name="System Bold" size="15.0" />
+											</font>
+										</Label>
+										<Label fx:id="ti" alignment="CENTER" layoutX="26.0"
+											layoutY="14.0" minWidth="150.0"
+											style="-fx-background-color: #4c008f; -fx-border-color: white; -fx-border-image-width: 2px; -fx-border-radius: 12px; -fx-background-radius: 12px; -fx-border-width: 2px;"
+											text="0" textFill="WHITE">
+											<font>
+												<Font size="16.0" />
+											</font>
+										</Label>
+									</children>
+								</AnchorPane>
+								<AnchorPane minHeight="200.0" minWidth="200.0"
+									prefHeight="200.0" prefWidth="200.0"
+									style="-fx-background-color: #c475ff; -fx-background-radius: 15px;">
+									<children>
+										<ImageView fx:id="numSoldProducts" fitHeight="100.0"
+											fitWidth="150.0" layoutX="26.0" layoutY="50.0"
+											pickOnBounds="true" preserveRatio="true" />
+										<Label alignment="CENTER" layoutX="5.0" layoutY="165.0"
+											minHeight="25.0" minWidth="190.0"
+											style="-fx-background-color: #4c008f; -fx-background-radius: 10px; -fx-border-color: white; -fx-border-radius: 10px; -fx-border-width: 2px;"
+											text="Number of Sold Products" textFill="WHITE">
+											<font>
+												<Font name="System Bold" size="15.0" />
+											</font>
+										</Label>
+										<Label fx:id="tsp" alignment="CENTER" layoutX="25.0"
+											layoutY="14.0" minWidth="150.0"
+											style="-fx-background-color: #4c008f; -fx-border-color: white; -fx-border-image-width: 2px; -fx-border-radius: 12px; -fx-background-radius: 12px; -fx-border-width: 2px;"
+											text="0" textFill="WHITE">
+											<font>
+												<Font size="16.0" />
+											</font>
+										</Label>
+									</children>
+								</AnchorPane>
+							</children>
+							<cursor>
+								<Cursor fx:constant="DEFAULT" />
+							</cursor>
+						</HBox>
+						<HBox alignment="CENTER" layoutY="393.0" prefHeight="100.0"
+							prefWidth="200.0" AnchorPane.leftAnchor="0.0"
+							AnchorPane.rightAnchor="0.0">
+							<children>
+								<AnchorPane prefHeight="258.0" prefWidth="0.0"
+									style="-fx-background-color: white; -fx-background-radius: 20px;" />
+							</children>
+						</HBox>
+						<HBox alignment="CENTER" layoutY="260.0" prefHeight="100.0"
+							prefWidth="947.0" AnchorPane.leftAnchor="0.0"
+							AnchorPane.rightAnchor="0.0" />
+					</children>
+				</AnchorPane>
+				<ScrollPane fitToHeight="true" fitToWidth="true"
+					prefHeight="821.0" prefWidth="333.0" AnchorPane.bottomAnchor="0.0"
+					AnchorPane.topAnchor="0.0">
+					<content>
+						<VBox minHeight="950.0" minWidth="300.0" prefHeight="800.0"
+							prefWidth="333.0" style="-fx-background-color: #7895CB;">
+							<children>
+								<AnchorPane minWidth="300.0" prefHeight="120.0"
+									prefWidth="0.0" style="-fx-background-color: #211951;">
+									<children>
+										<Label layoutX="100.0" layoutY="5.0" text="CAFE"
+											textFill="WHITE">
+											<font>
+												<Font name="Bookman Old Style Bold" size="48.0" />
+											</font>
+										</Label>
+										<Label layoutX="84.0" layoutY="66.0" text="ManageMent"
+											textFill="WHITE">
+											<font>
+												<Font size="28.0" />
+											</font>
+										</Label>
+									</children>
+								</AnchorPane>
+								<AnchorPane minWidth="300.0" prefHeight="120.0"
+									prefWidth="300.0" style="-fx-background-color: #5F0F40;">
+									<children>
+										<Label layoutX="14.0" layoutY="14.0" prefHeight="91.0"
+											prefWidth="300.0"
+											text="Everything has beauty, but not everyone sees it."
+											textFill="WHITE" wrapText="true">
+											<font>
+												<Font name="System Bold" size="22.0" />
+											</font>
+										</Label>
+									</children>
+								</AnchorPane>
+								<AnchorPane minWidth="300.0" prefHeight="270.0"
+									prefWidth="333.0" style="-fx-background-color: #c70c9b;">
+									<VBox.margin>
+										<Insets bottom="20.0" top="20.0" />
+									</VBox.margin>
+									<children>
+										<VBox alignment="TOP_CENTER" prefHeight="306.0"
+											prefWidth="333.0" spacing="15.0"
+											style="-fx-background-color: #F0F3FF;">
+											<children>
+												<Button fx:id="dashboard" minHeight="40.0"
+													mnemonicParsing="false" onAction="#gotoDashBoard"
+													prefHeight="42.0" prefWidth="300.0"
+													style="-fx-background-color: #1B1A55; -fx-border-color: #fff700; -fx-border-width: 3PX;"
+													text="Dashboard" textFill="WHITE">
+													<font>
+														<Font name="Cambria Math" size="17.0" />
+													</font>
+												</Button>
+												<Button fx:id="menu" minHeight="40.0"
+													minWidth="300.0" mnemonicParsing="false"
+													onAction="#showMenuAndBill"
+													style="-fx-background-color: #1B1A55; -fx-border-color: #fff700; -fx-border-width: 3PX;"
+													text="Menu" textFill="WHITE">
+													<font>
+														<Font name="Cambria Math" size="17.0" />
+													</font>
+												</Button>
+												<Button fx:id="booking" minHeight="40.0"
+													minWidth="300.0" mnemonicParsing="false"
+													onAction="#getBookinDetails"
+													style="-fx-background-color: #1B1A55; -fx-border-color: #fff700; -fx-border-width: 3PX;"
+													text="Bookings" textFill="WHITE">
+													<font>
+														<Font name="Cambria Math" size="17.0" />
+													</font>
+												</Button>
+												<Button fx:id="inventory" minHeight="40.0"
+													minWidth="300.0" mnemonicParsing="false"
+													onAction="#gotoInventory"
+													style="-fx-background-color: #1B1A55; -fx-border-color: #fff700; -fx-border-width: 3PX;"
+													text="Inventory" textFill="WHITE">
+													<font>
+														<Font name="Cambria Math" size="17.0" />
+													</font>
+												</Button>
+												<Button fx:id="employee" minHeight="40.0"
+													minWidth="300.0" mnemonicParsing="false"
+													onAction="#manageStaff"
+													style="-fx-background-color: #1B1A55; -fx-border-color: #fff700; -fx-border-width: 3PX;"
+													text="Employees" textFill="WHITE">
+													<font>
+														<Font name="Cambria Math" size="17.0" />
+													</font>
+												</Button>
+											</children>
+											<padding>
+												<Insets top="15.0" />
+											</padding>
+										</VBox>
+									</children>
+								</AnchorPane>
+								<AnchorPane prefHeight="148.0" prefWidth="333.0">
+									<children>
+										<TextField fx:id="changeName" layoutX="14.0"
+											layoutY="14.0" prefHeight="29.0" prefWidth="298.0"
+											promptText="userName">
+											<font>
+												<Font size="15.0" />
+											</font>
+										</TextField>
+										<TextField fx:id="changePass" layoutX="14.0"
+											layoutY="59.0" prefHeight="29.0" prefWidth="298.0"
+											promptText="password">
+											<font>
+												<Font size="15.0" />
+											</font>
+										</TextField>
+										<Button fx:id="switchUser" layoutX="125.0"
+											layoutY="107.0" mnemonicParsing="false" onAction="#logOut"
+											style="-fx-background-color: #150D07;" text="Change User"
+											textFill="WHITE" />
+									</children>
+								</AnchorPane>
+							</children>
+						</VBox>
+					</content>
+				</ScrollPane>
+			</children>
+		</AnchorPane>
+	</content>
+</ScrollPane>

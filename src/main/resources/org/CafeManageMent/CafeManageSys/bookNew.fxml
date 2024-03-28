@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="796.0" maxWidth="700.0"
+	minHeight="400.0" minWidth="700.0" prefHeight="620.0" prefWidth="700.0"
+	style="-fx-background-color: #ffcfef;"
+	xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="org.CafeManageMent.CafeManageSys.NewBooking">
+	<children>
+		<VBox layoutX="14.0" layoutY="76.0" minHeight="370.0"
+			minWidth="240.0" prefHeight="387.0" prefWidth="240.0" spacing="14.0"
+			style="-fx-background-color: #ff36bc; -fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;"
+			AnchorPane.leftAnchor="14.0">
+			<children>
+				<Label alignment="CENTER" contentDisplay="CENTER"
+					minHeight="30.0" minWidth="200.0"
+					style="-fx-background-color: #cfffe9; -fx-background-radius: 20px; -fx-border-color: #004727; -fx-border-radius: 20px; -fx-border-width: 2px;"
+					text="Name" textAlignment="CENTER">
+					<VBox.margin>
+						<Insets left="20.0" right="20.0" />
+					</VBox.margin>
+					<font>
+						<Font name="System Bold" size="23.0" />
+					</font>
+				</Label>
+				<Label alignment="CENTER" contentDisplay="CENTER"
+					minHeight="30.0" minWidth="200.0"
+					style="-fx-background-color: #cfffe9; -fx-background-radius: 20px; -fx-border-color: #004727; -fx-border-radius: 20px; -fx-border-width: 2px;"
+					text="Seats" textAlignment="CENTER">
+					<VBox.margin>
+						<Insets left="20.0" right="20.0" />
+					</VBox.margin>
+					<font>
+						<Font name="System Bold" size="23.0" />
+					</font>
+				</Label>
+				<Label alignment="CENTER" contentDisplay="CENTER"
+					minHeight="30.0" minWidth="200.0"
+					style="-fx-background-color: #cfffe9; -fx-background-radius: 20px; -fx-border-color: #004727; -fx-border-radius: 20px; -fx-border-width: 2px;"
+					text="Cost(per Person)" textAlignment="CENTER">
+					<VBox.margin>
+						<Insets left="20.0" right="20.0" />
+					</VBox.margin>
+					<font>
+						<Font name="System Bold" size="23.0" />
+					</font>
+				</Label>
+				<Label alignment="CENTER" contentDisplay="CENTER"
+					minHeight="30.0" minWidth="200.0"
+					style="-fx-background-color: #cfffe9; -fx-background-radius: 20px; -fx-border-color: #004727; -fx-border-radius: 20px; -fx-border-width: 2px;"
+					text="Payment" textAlignment="CENTER">
+					<VBox.margin>
+						<Insets left="20.0" right="20.0" />
+					</VBox.margin>
+					<font>
+						<Font name="System Bold" size="23.0" />
+					</font>
+				</Label>
+				<Label alignment="CENTER" contentDisplay="CENTER"
+					minHeight="30.0" minWidth="200.0"
+					style="-fx-background-color: #cfffe9; -fx-background-radius: 20px; -fx-border-color: #004727; -fx-border-radius: 20px; -fx-border-width: 2px;"
+					text="Contact" textAlignment="CENTER">
+					<font>
+						<Font name="System Bold" size="23.0" />
+					</font>
+					<VBox.margin>
+						<Insets left="20.0" right="20.0" />
+					</VBox.margin>
+				</Label>
+				<Label alignment="CENTER" contentDisplay="CENTER"
+					minHeight="30.0" minWidth="200.0"
+					style="-fx-background-color: #cfffe9; -fx-background-radius: 20px; -fx-border-color: #004727; -fx-border-radius: 20px; -fx-border-width: 2px;"
+					text="Discount" textAlignment="CENTER">
+					<font>
+						<Font name="System Bold" size="23.0" />
+					</font>
+					<VBox.margin>
+						<Insets left="20.0" right="20.0" />
+					</VBox.margin>
+				</Label>
+				<Label alignment="CENTER" contentDisplay="CENTER"
+					minHeight="30.0" minWidth="200.0"
+					style="-fx-background-color: #cfffe9; -fx-background-radius: 20px; -fx-border-color: #004727; -fx-border-radius: 20px; -fx-border-width: 2px;"
+					text="Total" textAlignment="CENTER">
+					<font>
+						<Font name="System Bold" size="23.0" />
+					</font>
+					<VBox.margin>
+						<Insets left="20.0" right="20.0" />
+					</VBox.margin>
+				</Label>
+			</children>
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets top="10.0" />
+			</padding>
+		</VBox>
+		<VBox layoutX="266.0" layoutY="76.0" minHeight="370.0"
+			minWidth="240.0" prefHeight="387.0" prefWidth="420.0" spacing="22.0"
+			style="-fx-background-color: #bd6ca2; -fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;"
+			AnchorPane.leftAnchor="266.0" AnchorPane.rightAnchor="14.0">
+			<opaqueInsets>
+				<Insets />
+			</opaqueInsets>
+			<padding>
+				<Insets left="10.0" right="10.0" top="10.0" />
+			</padding>
+			<children>
+				<TextField fx:id="empName" minHeight="30.0"
+					minWidth="400.0" prefWidth="400.0" promptText="Name"
+					style="-fx-background-radius: 10px;">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</TextField>
+				<Spinner fx:id="seats" editable="true" minHeight="30.0"
+					minWidth="400.0" />
+				<Spinner fx:id="cost" editable="true" minHeight="30.0"
+					minWidth="400.0" prefHeight="30.0" />
+				<TextField fx:id="payment" minHeight="30.0"
+					minWidth="400.0" prefWidth="400.0" promptText="payment"
+					style="-fx-background-radius: 10px;">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</TextField>
+				<TextField fx:id="contact" minHeight="30.0"
+					minWidth="400.0" prefWidth="400.0" promptText="Address"
+					style="-fx-background-radius: 10px;">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</TextField>
+				<HBox alignment="CENTER_LEFT" prefHeight="30.0"
+					prefWidth="400.0" spacing="20.0">
+					<children>
+						<TextField fx:id="discount" minHeight="30.0"
+							prefHeight="30.0" prefWidth="295.0"
+							promptText="Numbers in percentage" />
+						<Button fx:id="ok" mnemonicParsing="false"
+							onAction="#okDiscount" text="OK" />
+					</children>
+				</HBox>
+				<TextField fx:id="tatal" minHeight="30.0" minWidth="400.0"
+					prefHeight="30.0" prefWidth="400.0" promptText="Total Amount"
+					style="-fx-background-radius: 10px;">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</TextField>
+			</children>
+		</VBox>
+		<HBox alignment="CENTER" layoutX="14.0" layoutY="14.0"
+			prefHeight="50.0" prefWidth="673.0" spacing="25.0"
+			style="-fx-background-color: #ff8fda;" AnchorPane.leftAnchor="14.0"
+			AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="14.0">
+			<children>
+				<DatePicker fx:id="date" minHeight="30.0"
+					minWidth="200.0" promptText="mm/dd/yyyy" />
+				<Button fx:id="serach" lineSpacing="25.0" minHeight="30.0"
+					minWidth="100.0" mnemonicParsing="false" onAction="#searchItem"
+					prefHeight="30.0" text="Search">
+					<font>
+						<Font name="System Bold" size="15.0" />
+					</font>
+				</Button>
+				<Label fx:id="lable" minHeight="45.0" minWidth="200.0"
+					prefHeight="45.0" prefWidth="200.0" text="Booked : ">
+					<font>
+						<Font name="System Bold" size="28.0" />
+					</font>
+				</Label>
+			</children>
+		</HBox>
+		<HBox alignment="CENTER" layoutX="8.0" layoutY="488.0"
+			prefHeight="100.0" prefWidth="684.0" spacing="30.0"
+			style="-fx-background-color: #d65cff;">
+			<children>
+				<Button fx:id="done" minHeight="50.0" minWidth="100.0"
+					mnemonicParsing="false" onAction="#done"
+					style="-fx-background-color: #3126ff; -fx-border-color: white; -fx-background-radius: 10px;"
+					text="DONE" textFill="WHITE">
+					<font>
+						<Font name="System Bold" size="20.0" />
+					</font>
+				</Button>
+				<Button fx:id="cancel" minHeight="50.0" minWidth="100.0"
+					mnemonicParsing="false" onAction="#cancel"
+					style="-fx-background-color: #3126ff; -fx-border-color: white; -fx-background-radius: 10px;"
+					text="CANCEL" textFill="WHITE">
+					<font>
+						<Font name="System Bold" size="20.0" />
+					</font>
+				</Button>
+			</children>
+		</HBox>
+	</children>
+</AnchorPane>

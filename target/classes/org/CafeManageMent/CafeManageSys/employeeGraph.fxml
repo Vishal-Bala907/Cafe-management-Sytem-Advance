@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ScrollPane?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true"
+	prefHeight="486.0" prefWidth="831.0"
+	xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="org.CafeManageMent.CafeManageSys.EmployeeGraph">
+	<content>
+		<LineChart fx:id="lineChart">
+			<xAxis>
+				<CategoryAxis fx:id="XAxis" label="Date" side="BOTTOM" />
+			</xAxis>
+			<yAxis>
+				<NumberAxis fx:id="YAxis" label="Number Of Bookings"
+					side="LEFT" />
+			</yAxis>
+		</LineChart>
+	</content>
+</ScrollPane>

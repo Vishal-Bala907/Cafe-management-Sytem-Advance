@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="727.0" minWidth="880.0" prefHeight="727.0" prefWidth="880.0"
+	style="-fx-background-color: #ebfff0;"
+	xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="org.CafeManageMent.CafeManageSys.ManageStaff">
+	<children>
+		<TableView fx:id="managerTableView" layoutX="14.0"
+			layoutY="14.0" prefHeight="453.0" prefWidth="850.0"
+			AnchorPane.bottomAnchor="259.0" AnchorPane.leftAnchor="15.0"
+			AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+			<columns>
+				<TableColumn fx:id="sn" prefWidth="56.0" text="S.N." />
+				<TableColumn fx:id="nameColumn" minWidth="0.0"
+					prefWidth="187.0" text="Name" />
+				<TableColumn fx:id="idColumn" editable="false"
+					prefWidth="53.0" text="ID" />
+				<TableColumn fx:id="postColumn" prefWidth="123.0"
+					text="Post" />
+				<TableColumn fx:id="salaryColumn" prefWidth="93.0"
+					text="Salary" />
+				<TableColumn fx:id="contactColumn" prefWidth="135.0"
+					text="Contact" />
+				<TableColumn fx:id="AddressColumn" prefWidth="202.0"
+					text="Address" />
+			</columns>
+		</TableView>
+		<AnchorPane layoutX="15.0" layoutY="483.0" minWidth="850.0"
+			prefHeight="200.0" prefWidth="868.0"
+			style="-fx-background-color: #00888f; -fx-border-color: #62008f; -fx-border-width: 3px; -fx-background-radius: 25px; -fx-border-radius: 25px;"
+			AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="15.0"
+			AnchorPane.rightAnchor="15.0">
+			<children>
+				<Label alignment="CENTER" contentDisplay="CENTER"
+					layoutX="250.0" layoutY="14.0" minWidth="350.0" prefHeight="54.0"
+					prefWidth="350.0"
+					style="-fx-background-color: #bdf4ff; -fx-background-radius: 90; -fx-border-color: white; -fx-border-radius: 90; -fx-border-width: 2px;"
+					text="Manage Inventory" AnchorPane.leftAnchor="250.0"
+					AnchorPane.rightAnchor="247.0" AnchorPane.topAnchor="14.0">
+					<font>
+						<Font name="Dubai Bold" size="28.0" />
+					</font>
+				</Label>
+				<HBox alignment="CENTER" layoutX="-4.0" layoutY="100.0"
+					minWidth="600.0" prefHeight="48.0" prefWidth="864.0" spacing="50.0"
+					AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-4.0">
+					<children>
+						<Button fx:id="add" maxWidth="250.0" minHeight="45.0"
+							minWidth="150.0" mnemonicParsing="false"
+							onAction="#setNewEmployee" prefWidth="150.0"
+							style="-fx-background-color: white; -fx-border-color: Black; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;"
+							text="Add New Emp" textFill="#0f0094">
+							<font>
+								<Font name="System Bold" size="15.0" />
+							</font>
+						</Button>
+						<Button fx:id="update" minHeight="45.0" minWidth="150.0"
+							mnemonicParsing="false" onAction="#updateItem"
+							style="-fx-background-color: white; -fx-border-color: Black; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;"
+							text="Update Emp" textFill="#0f0094">
+							<font>
+								<Font name="System Bold" size="15.0" />
+							</font>
+						</Button>
+						<Button fx:id="removeOne" minHeight="45.0" minWidth="150.0"
+							mnemonicParsing="false" onAction="#removeSingle"
+							style="-fx-background-color: white; -fx-border-color: Black; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;"
+							text="Remove Emp" textFill="#0f0094">
+							<font>
+								<Font name="System Bold" size="15.0" />
+							</font>
+						</Button>
+						<Button fx:id="removeAll" minHeight="45.0" minWidth="150.0"
+							mnemonicParsing="false" onAction="#removeAllEmployee"
+							style="-fx-background-color: white; -fx-border-color: Black; -fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px;"
+							text="Remove ALL" textFill="#0f0094">
+							<font>
+								<Font name="System Bold" size="15.0" />
+							</font>
+						</Button>
+					</children>
+				</HBox>
+				<Button fx:id="refresh" layoutX="24.0" layoutY="17.0"
+					mnemonicParsing="false" onAction="#onRefresh"
+					style="-fx-background-radius: 45; -fx-background-color: white;"
+					text="refresh">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+	</children>
+</AnchorPane>
